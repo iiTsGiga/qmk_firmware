@@ -12,7 +12,7 @@
 #define _ALT_SYMS 6
 #define _FUNC_NAV 7
 
- const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     /* Dvorak: */
     /*
@@ -33,7 +33,7 @@
     ),
 
     [_BASE_NAV] = LAYOUT_split_3x6_3(
-        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,             XXXXXXX, KC_BSPC, KC_UP,   KC_DEL,  KC_PGUP, XXXXXXX,
+        XXXXXXX, KC_BSPC, XXXXXXX, KC_DEL,  XXXXXXX, XXXXXXX,             XXXXXXX, KC_BSPC, KC_UP,   KC_DEL,  KC_PGUP, XXXXXXX,
         XXXXXXX, KC_LGUI, KC_LALT, KC_LSFT, KC_LCTL, XXXXXXX,             KC_CAPS, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, XXXXXXX,
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,             XXXXXXX, KC_HOME, KC_INS,  KC_END,  CW_TOGG, XXXXXXX,
                                        XXXXXXX, XXXXXXX, _______,     XXXXXXX, XXXXXXX, XXXXXXX
