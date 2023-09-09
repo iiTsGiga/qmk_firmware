@@ -14,11 +14,22 @@
 
  const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
+    /* Dvorak: */
+    /*
     [_BASE_LETTERS] = LAYOUT_split_3x6_3(
         XXXXXXX, US_ADIA,      US_ODIA,      US_SS,        US_P,         US_Y,             US_F, US_G,         US_C,         US_R,         US_L,         XXXXXXX,
         XXXXXXX, LGUI_T(US_A), LALT_T(US_O), LSFT_T(US_E), LCTL_T(US_U), US_I,             US_D, LCTL_T(US_H), LSFT_T(US_T), LALT_T(US_N), LGUI_T(US_S), XXXXXXX,
         XXXXXXX, US_UDIA,      US_Q,         US_J,         US_K,         US_X,             US_B, US_M,         US_W,         US_V,         US_Z,         XXXXXXX,
              LT(_FUNC_NAV, KC_ESC), LT(_BASE_NUMS, KC_SPC), LT(_BASE_NAV, KC_TAB),     LT(_MOUSE_NAV, KC_ENT), LT(_BASE_SYMS, US_DOT), LT(_MEDIA_NAV, US_COMM)
+    ),
+    */
+
+    /* Bone: */
+    [_BASE_LETTERS] = LAYOUT_split_3x6_3(
+        XXXXXXX, US_J,         US_D,         US_U,         US_A,         US_X,                US_P, US_H,         US_L,         US_M,         US_W,         XXXXXXX,
+        XXXXXXX, LGUI_T(US_C), LALT_T(US_T), LSFT_T(US_I), LCTL_T(US_E), US_O,                US_B, LCTL_T(US_N), LSFT_T(US_R), LALT_T(US_S), LGUI_T(US_G), XXXXXXX,
+        XXXXXXX, US_F,         US_V,         US_UDIA,      US_ADIA,      US_ODIA,             US_Y, US_Z,         US_Q,         US_SS,        US_K,         XXXXXXX,
+                LT(_FUNC_NAV, KC_ESC), LT(_BASE_NUMS, KC_SPC), LT(_BASE_NAV, KC_TAB),     LT(_MOUSE_NAV, KC_ENT), LT(_BASE_SYMS, US_DOT), LT(_MEDIA_NAV, US_COMM)
     ),
 
     [_BASE_NAV] = LAYOUT_split_3x6_3(
