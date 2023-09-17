@@ -1,2 +1,4 @@
 #define TAPPING_TERM 200
 #define PERMISSIVE_HOLD
+#define EE_HANDS
+#define SPLIT_USB_DETECT

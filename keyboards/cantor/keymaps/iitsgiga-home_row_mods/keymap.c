@@ -1,4 +1,3 @@
-#include "keycodes.h"
 #include QMK_KEYBOARD_H
 
 #include "keymap_us_international_linux.h"
@@ -11,6 +10,14 @@
 #define _BASE_SYMS 5
 #define _ALT_SYMS 6
 #define _FUNC_NAV 7
+
+#define MY_QUOT US_ACUT
+#define MY_DQUO S(US_ACUT)
+#define MY_ACUT ALGR(US_QUOT)
+#define MY_DIAE S(ALGR(US_QUOT))
+#define MY_GRV US_DGRV
+#define MY_TILD S(US_DGRV)
+#define MY_CIRC S(US_6)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -54,16 +61,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_BASE_NUMS] = LAYOUT_split_3x6_3(
-        XXXXXXX, US_A,         US_B,         US_C,         US_F,           US_D,                US_B, US_7, US_8,         US_9, US_QUOT, XXXXXXX,
+        XXXXXXX, US_A,         US_B,         US_C,         US_F,           US_D,                US_B, US_7, US_8,         US_9, MY_QUOT, XXXXXXX,
         XXXXXXX, LGUI_T(US_D), LALT_T(US_E), LSFT_T(US_F), LCTL_T(US_DOT), US_COMM,             US_O, US_4, LSFT_T(US_5), US_6, US_UNDS, XXXXXXX,
         XXXXXXX, XXXXXXX,      XXXXXXX,      US_E,         US_PLUS,        US_MINS,             US_X, US_0, US_1,         US_3, US_DOT,  XXXXXXX,
                                                              XXXXXXX, _______, XXXXXXX,     XXXXXXX, US_0, XXXXXXX
     ),
 
     [_BASE_SYMS] = LAYOUT_split_3x6_3(
-        XXXXXXX, US_EXLM, US_LABK, US_RABK, US_ASTR, US_SLSH,             US_QUOT, US_QUES, US_LCBR, US_RCBR, US_SCLN, XXXXXXX,
-        XXXXXXX, US_PIPE, US_LPRN, US_RPRN, US_PLUS, US_MINS,             US_DQUO, US_EQL,  US_LBRC, US_RBRC, US_COLN, XXXXXXX,
-        XXXXXXX, US_AMPR, US_AT,   US_TILD, US_CIRC, US_PERC,             US_GRV,  US_DLR,  US_HASH, US_PERC, US_BSLS, XXXXXXX,
+        XXXXXXX, US_EXLM, US_LABK, US_RABK, US_ASTR, US_SLSH,             MY_QUOT, US_QUES, US_LCBR, US_RCBR, US_SCLN, XXXXXXX,
+        XXXXXXX, US_PIPE, US_LPRN, US_RPRN, US_PLUS, US_MINS,             MY_DQUO, US_EQL,  US_LBRC, US_RBRC, US_COLN, XXXXXXX,
+        XXXXXXX, US_AMPR, US_AT,   MY_TILD, MY_CIRC, US_PERC,             MY_GRV,  US_DLR,  US_HASH, US_PERC, US_BSLS, XXXXXXX,
                                  XXXXXXX, US_UNDS, MO(_ALT_SYMS),     XXXXXXX, _______, XXXXXXX
     ),
 
