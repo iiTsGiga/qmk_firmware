@@ -77,7 +77,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_ALT_SYMS] = LAYOUT_split_3x6_3(
         XXXXXXX, US_IEXL, US_LDAQ, US_RDAQ, US_MUL,  US_DIV,              US_ETH,  US_IQUE, US_SECT, US_CURR, US_PND,  XXXXXXX,
         XXXXXXX, US_BRKP, US_LSQU, US_RSQU, US_OSTR, US_MICR,             US_SECT, US_QRTR, US_HALF, US_TQTR, US_EURO, XXXXXXX,
-        XXXXXXX, US_REGD, US_COPY, US_NOT,  US_DEG,  US_CENT,             US_CURR, US_SUP1, US_SUP2, US_SUP3, US_YEN,  XXXXXXX,
+        XXXXXXX, US_REGD, US_COPY, US_NOT,  US_DEG,  US_CENT,             MY_ACUT, US_SUP1, US_SUP2, US_SUP3, US_YEN,  XXXXXXX,
                                        XXXXXXX, XXXXXXX, _______,     XXXXXXX, _______, XXXXXXX
     ),
 
