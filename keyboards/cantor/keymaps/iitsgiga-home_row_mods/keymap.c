@@ -1,3 +1,4 @@
+#include "keycodes.h"
 #include QMK_KEYBOARD_H
 
 #include "keymap_us_international_linux.h"
@@ -36,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         XXXXXXX, US_J,         US_D,         US_U,         US_A,         US_X,                US_P, US_H,         US_L,         US_M,         US_W,         XXXXXXX,
         XXXXXXX, LGUI_T(US_C), LALT_T(US_T), LSFT_T(US_I), LCTL_T(US_E), US_O,                US_B, LCTL_T(US_N), LSFT_T(US_R), LALT_T(US_S), LGUI_T(US_G), XXXXXXX,
         XXXXXXX, US_F,         US_V,         US_UDIA,      US_ADIA,      US_ODIA,             US_Y, US_Z,         US_Q,         US_SS,        US_K,         XXXXXXX,
-                LT(_FUNC_NAV, KC_ESC), LT(_BASE_NUMS, KC_SPC), LT(_BASE_NAV, KC_TAB),     LT(_MOUSE_NAV, KC_ENT), LT(_BASE_SYMS, US_DOT), LT(_MEDIA_NAV, US_COMM)
+                LT(_FUNC_NAV, KC_ESC), LT(_BASE_NUMS, KC_SPC), LT(_BASE_NAV, KC_TAB),     LT(_MOUSE_NAV, US_DOT), LT(_BASE_SYMS, KC_ENT), LT(_MEDIA_NAV, US_COMM)
     ),
 
     [_BASE_NAV] = LAYOUT_split_3x6_3(
