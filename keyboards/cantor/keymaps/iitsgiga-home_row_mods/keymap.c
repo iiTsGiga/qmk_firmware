@@ -62,23 +62,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_BASE_NUMS] = LAYOUT_split_3x6_3(
-        XXXXXXX, US_A,         US_B,         US_C,         US_F,           US_D,                US_B, US_7, US_8,         US_9, MY_QUOT, XXXXXXX,
-        XXXXXXX, LGUI_T(US_D), LALT_T(US_E), LSFT_T(US_F), LCTL_T(US_DOT), US_COMM,             US_O, US_4, LSFT_T(US_5), US_6, US_UNDS, XXXXXXX,
-        XXXXXXX, XXXXXXX,      XXXXXXX,      US_E,         US_PLUS,        US_MINS,             US_X, US_1, US_2,         US_3, US_DOT,  XXXXXXX,
+        XXXXXXX, US_A,         US_B,         US_C,         US_F,           US_D,                US_O, US_7, US_8,         US_9, MY_QUOT, XXXXXXX,
+        XXXXXXX, LGUI_T(US_D), LALT_T(US_E), LSFT_T(US_F), LCTL_T(US_DOT), US_COMM,             US_X, US_4, LSFT_T(US_5), US_6, US_UNDS, XXXXXXX,
+        XXXXXXX, XXXXXXX,      XXXXXXX,      US_E,         US_PLUS,        US_MINS,             US_B, US_1, US_2,         US_3, US_DOT,  XXXXXXX,
                                                              XXXXXXX, _______, XXXXXXX,     XXXXXXX, US_0, XXXXXXX
     ),
 
     [_BASE_SYMS] = LAYOUT_split_3x6_3(
-        XXXXXXX, US_EXLM, US_LABK, US_RABK, US_ASTR, US_SLSH,             MY_DQUO, US_QUES, US_LCBR, US_RCBR, US_SCLN, XXXXXXX,
-        XXXXXXX, US_PIPE, US_LPRN, US_RPRN, US_PLUS, US_MINS,             MY_QUOT, US_EQL,  US_LBRC, US_RBRC, US_COLN, XXXXXXX,
-        XXXXXXX, US_AMPR, US_AT,   MY_TILD, MY_CIRC, US_PERC,             MY_GRV,  US_DLR,  US_HASH, US_PERC, US_BSLS, XXXXXXX,
+        XXXXXXX, US_AT,   US_LABK, US_RABK, US_ASTR, US_SLSH,             MY_DQUO, US_QUES, US_LCBR, US_RCBR, US_SCLN, XXXXXXX,
+        XXXXXXX, US_EXLM, US_LPRN, US_RPRN, US_PLUS, US_MINS,             MY_QUOT, US_EQL,  US_LBRC, US_RBRC, US_COLN, XXXXXXX,
+        XXXXXXX, MY_TILD, US_PIPE, US_AMPR, MY_CIRC, US_PERC,             MY_GRV,  US_HASH, US_DLR,  US_EURO, US_BSLS, XXXXXXX,
                                  XXXXXXX, US_UNDS, MO(_ALT_SYMS),     XXXXXXX, _______, XXXXXXX
     ),
 
     [_ALT_SYMS] = LAYOUT_split_3x6_3(
-        XXXXXXX, US_IEXL, US_LDAQ, US_RDAQ, US_MUL,  US_DIV,              US_ETH,  US_IQUE, US_SECT, US_CURR, US_PND,  XXXXXXX,
-        XXXXXXX, US_BRKP, US_LSQU, US_RSQU, US_OSTR, US_MICR,             US_SECT, US_QRTR, US_HALF, US_TQTR, US_EURO, XXXXXXX,
-        XXXXXXX, US_REGD, US_COPY, US_NOT,  US_DEG,  US_CENT,             MY_ACUT, US_SUP1, US_SUP2, US_SUP3, US_YEN,  XXXXXXX,
+        XXXXXXX, US_COPY, US_LDAQ, US_RDAQ, US_MUL,  US_DIV,              US_ETH,  US_IQUE, US_LSQU, US_RSQU, US_CURR, XXXXXXX,
+        XXXXXXX, US_IEXL, US_LDQU, US_RDQU, US_OSTR, US_MICR,             US_SECT, US_QRTR, US_HALF, US_TQTR, US_PND,  XXXXXXX,
+        XXXXXXX, US_NOT,  US_BRKP, US_REGD, US_DEG,  US_CENT,             MY_ACUT, US_SUP1, US_SUP2, US_SUP3, US_YEN,  XXXXXXX,
                                        XXXXXXX, XXXXXXX, _______,     XXXXXXX, _______, XXXXXXX
     ),
 
