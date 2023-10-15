@@ -5,7 +5,7 @@ This is a custom keymap for the *[Cantor Remix](https://keebd.com/products/canto
 Features include:
 
 - modified *[Bone](https://www.neo-layout.org/Layouts/bone/)* layout on base layer
-- home row modifier keys
+- bottom row modifiers + home row shift key
 - number layer with additional characters to allow for scientific and programming notations
 - separate symbol layers
 - function key layer
