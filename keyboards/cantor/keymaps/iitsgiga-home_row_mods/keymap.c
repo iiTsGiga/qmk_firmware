@@ -28,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,             XXXXXXX, KC_BSPC, KC_UP,   KC_DEL,  KC_PGUP, XXXXXXX,
         XXXXXXX, XXXXXXX, XXXXXXX, KC_LSFT, XXXXXXX, XXXXXXX,             KC_CAPS, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, XXXXXXX,
         XXXXXXX, KC_LGUI, KC_LALT, KC_ALGR, KC_LCTL, XXXXXXX,             XXXXXXX, KC_HOME, KC_INS,  KC_END,  CW_TOGG, XXXXXXX,
-                                       XXXXXXX, XXXXXXX, XXXXXXX,     _______, XXXXXXX, XXXXXXX
+                                       XXXXXXX, KC_SPC,  KC_ENT,     _______, XXXXXXX, XXXXXXX
     ),
 
     [MOUSE_NAV] = LAYOUT_split_3x6_3(
@@ -49,14 +49,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         XXXXXXX, DE_A,    DE_B,    DE_C,         DE_F,            DE_D,                DE_O, DE_7,         DE_8,         DE_9,         DE_QUOT,        XXXXXXX,
         XXXXXXX, DE_D,    DE_E,    LSFT_T(DE_F), DE_DOT,          DE_COMM,             DE_X, DE_4,         LSFT_T(DE_5), DE_6,         DE_UNDS,        XXXXXXX,
         XXXXXXX, KC_LGUI, KC_LALT, ALGR_T(DE_E), LCTL_T(DE_PLUS), DE_MINS,             DE_B, LCTL_T(DE_1), ALGR_T(DE_2), LALT_T(DE_3), LGUI_T(DE_DOT), XXXXXXX,
-                                                             XXXXXXX, _______, XXXXXXX,     XXXXXXX, DE_0, XXXXXXX
+                                                    XXXXXXX, _______, XXXXXXX,     XXXXXXX, DE_0, XXXXXXX
     ),
 
     [BASE_SYMS] = LAYOUT_split_3x6_3(
         XXXXXXX, DE_AT,   DE_LABK, DE_RABK, DE_ASTR, DE_SLSH,             DE_DQUO, DE_QUES, DE_LCBR, DE_RCBR, DE_SCLN, XXXXXXX,
         XXXXXXX, DE_EXLM, DE_LPRN, DE_RPRN, DE_PLUS, DE_MINS,             DE_QUOT, DE_EQL,  DE_LBRC, DE_RBRC, DE_COLN, XXXXXXX,
         XXXXXXX, DE_TILD, DE_PIPE, DE_AMPR, DE_CIRC, DE_PERC,             DE_GRV,  DE_HASH, DE_DLR,  DE_EURO, DE_BSLS, XXXXXXX,
-                                 XXXXXXX, DE_UNDS, MO(ALT_SYMS),     XXXXXXX, _______, XXXXXXX
+                            DE_UNDS, KC_SPC, LT(ALT_SYMS, KC_ENT),     XXXXXXX, _______, XXXXXXX
     ),
 
     [ALT_SYMS] = LAYOUT_split_3x6_3(
